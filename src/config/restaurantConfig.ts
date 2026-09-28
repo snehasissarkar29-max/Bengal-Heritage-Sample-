@@ -1,8 +1,12 @@
-const heroThaliImg = new URL('../assets/images/bengal_royal_thali_hero_1790584298883.jpg', import.meta.url).href;
-const interiorImg = new URL('../assets/images/kolkata_heritage_interior_1790584313450.jpg', import.meta.url).href;
-const shorsheIlishImg = new URL('../assets/images/shorshe_ilish_signature_1790584328260.jpg', import.meta.url).href;
-const koshaMangshoImg = new URL('../assets/images/kosha_mangsho_pulao_1790584337933.jpg', import.meta.url).href;
-const mishtiDoiImg = new URL('../assets/images/mishti_doi_sandesh_sweets_1790584349255.jpg', import.meta.url).href;
+const heroThaliImg = 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=1600&q=85';
+const interiorImg = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85';
+const shorsheIlishImg = 'https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=1400&q=85';
+const koshaMangshoImg = 'https://images.unsplash.com/photo-1545247181-516773cae754?auto=format&fit=crop&w=1400&q=85';
+const mishtiDoiImg = 'https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1400&q=85';
+const biryaniPulaoImg = 'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=1400&q=85';
+const chingriMalaiImg = 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=1400&q=85';
+const vegCurryImg = 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=1400&q=85';
+const drinkCoolerImg = 'https://images.unsplash.com/photo-1561336313-0bd5e0b27ec8?auto=format&fit=crop&w=1400&q=85';
 
 export type Language = 'en' | 'bn';
 
@@ -354,7 +358,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
       en: 'Serves 1–2 · Accompanied by steamed Gobindobhog rice · Demo Price',
       bn: '১–২ জনের জন্য উপযুক্ত · সাথে গরম গোবিন্দভোগ ভাত · ডেমো মূল্য',
     },
-    image: shorsheIlishImg,
+    image: chingriMalaiImg,
     menuItemId: 'fish-daab-chingri',
   },
   storyContent: {
@@ -466,7 +470,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: 'Tossed with clarified cow’s ghee, whole green cardamom, cashews, and golden raisins.',
         bn: 'খাঁটি গাওয়া ঘি, ছোট এলাচ, কাজু ও কিশমিশের মেলবন্ধন।',
       },
-      image: heroThaliImg,
+      image: biryaniPulaoImg,
     },
   ],
   signatureDishes: [
@@ -524,7 +528,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         bn: 'পুরনো গোবিন্দভোগ চালে গাওয়া ঘি, জাফরান, দারুচিনি, লবঙ্গ, ভাজা কাজু ও কিশমিশ সহযোগে তৈরি মিষ্টি সুবাসের পোলাও।',
       },
       demoPrice: 360,
-      image: heroThaliImg,
+      image: biryaniPulaoImg,
       pairingNote: {
         en: 'The classic festive companion to Kosha Mangsho or Chhanar Dalna',
         bn: 'কষা মাংস বা ছানার ডালনার সাথে সাবেকি যুগলবন্দি',
@@ -694,7 +698,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: '100% Vegetarian (Niramish · No Onion or Garlic) · Contains Dairy & Mustard',
         bn: 'সম্পূর্ণ নিরামিষ (পেঁয়াজ-রসুন ছাড়া) · দুগ্ধজাত উপাদান ও সর্ষে যুক্ত',
       },
-      image: heroThaliImg,
+      image: vegCurryImg,
     },
     {
       id: 'veg-mocha-ghonto',
@@ -721,7 +725,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: '100% Vegetarian (Niramish · No Onion or Garlic) · High Fibre',
         bn: 'সম্পূর্ণ নিরামিষ (পেঁয়াজ-রসুন ছাড়া)',
       },
-      image: koshaMangshoImg,
+      image: vegCurryImg,
     },
     {
       id: 'veg-chhanar-dalna',
@@ -748,7 +752,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: 'Vegetarian (No Onion or Garlic) · Contains Dairy',
         bn: 'নিরামিষ (পেঁয়াজ-রসুন ছাড়া) · ছানা ও ঘি যুক্ত',
       },
-      image: heroThaliImg,
+      image: vegCurryImg,
     },
     {
       id: 'veg-luchi-alur-dom',
@@ -833,7 +837,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: 'Non-Vegetarian (Shellfish / Prawns) · Gluten-Free',
         bn: 'আমিষ (চিংড়ি মাছ)',
       },
-      image: shorsheIlishImg,
+      image: chingriMalaiImg,
     },
     {
       id: 'fish-bhetki-paturi',
@@ -947,7 +951,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: '100% Vegetarian · Contains Nuts (Cashews) & Dairy (Ghee)',
         bn: 'সম্পূর্ণ নিরামিষ · কাজুবাদাম ও ঘি যুক্ত',
       },
-      image: koshaMangshoImg,
+      image: biryaniPulaoImg,
     },
     {
       id: 'rice-kolkata-biryani',
@@ -974,7 +978,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: 'Non-Vegetarian (Mutton & Egg) · Gluten-Free',
         bn: 'আমিষ (মাংস ও ডিম)',
       },
-      image: heroThaliImg,
+      image: biryaniPulaoImg,
     },
 
     // DESSERTS (মিষ্টি)
@@ -1060,7 +1064,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: 'Vegetarian · Digestive Cooler · Contains Dairy',
         bn: 'নিরামিষ · শরীর ঠান্ডা রাখার পানীয়',
       },
-      image: mishtiDoiImg,
+      image: drinkCoolerImg,
     },
     {
       id: 'drink-aam-pora-shorbot',
@@ -1087,7 +1091,7 @@ export const DEFAULT_RESTAURANT_CONFIG: RestaurantConfig = {
         en: '100% Vegan & Gluten-Free',
         bn: 'সম্পূর্ণ নিরামিষ ও ডেইরি-মুক্ত',
       },
-      image: heroThaliImg,
+      image: drinkCoolerImg,
     },
   ],
   galleryImages: [
