@@ -1,8 +1,8 @@
-import heroThaliImg from '../assets/images/bengal_royal_thali_hero_1790584298883.jpg';
-import interiorImg from '../assets/images/kolkata_heritage_interior_1790584313450.jpg';
-import shorsheIlishImg from '../assets/images/shorshe_ilish_signature_1790584328260.jpg';
-import koshaMangshoImg from '../assets/images/kosha_mangsho_pulao_1790584337933.jpg';
-import mishtiDoiImg from '../assets/images/mishti_doi_sandesh_sweets_1790584349255.jpg';
+const heroThaliImg = new URL('../assets/images/bengal_royal_thali_hero_1790584298883.jpg', import.meta.url).href;
+const interiorImg = new URL('../assets/images/kolkata_heritage_interior_1790584313450.jpg', import.meta.url).href;
+const shorsheIlishImg = new URL('../assets/images/shorshe_ilish_signature_1790584328260.jpg', import.meta.url).href;
+const koshaMangshoImg = new URL('../assets/images/kosha_mangsho_pulao_1790584337933.jpg', import.meta.url).href;
+const mishtiDoiImg = new URL('../assets/images/mishti_doi_sandesh_sweets_1790584349255.jpg', import.meta.url).href;
 
 export type Language = 'en' | 'bn';
 

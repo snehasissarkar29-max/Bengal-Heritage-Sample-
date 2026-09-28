@@ -15,7 +15,23 @@
   </head>
   <body class="bg-[#FAF7F2] text-[#1C1311] antialiased selection:bg-[#7A1C1C] selection:text-[#FAF7F2]">
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="./src/main.tsx"></script>
+    <script>
+      (function () {
+        var isViteDev = !!document.querySelector('script[src*="@vite/client"]');
+        var isBuiltPage = !!document.querySelector('script[src*="assets/app.js"]');
+        if (!isViteDev && !isBuiltPage) {
+          var css = document.createElement('link');
+          css.rel = 'stylesheet';
+          css.href = './dist/assets/app.css';
+          document.head.appendChild(css);
+          var js = document.createElement('script');
+          js.type = 'module';
+          js.src = './dist/assets/app.js';
+          document.body.appendChild(js);
+        }
+      })();
+    </script>
   </body>
 </html>
 
