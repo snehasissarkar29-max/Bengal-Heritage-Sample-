@@ -1,0 +1,6 @@
+{
+  "name": "Bengal Heritage (আহারে কলকাতা) — Fine Dining Demo",
+  "description": "A luxury interactive bilingual (English & Bengali) restaurant website concept showcasing Kolkata culinary heritage, interactive menu, cultural storytelling, and table reservation system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
